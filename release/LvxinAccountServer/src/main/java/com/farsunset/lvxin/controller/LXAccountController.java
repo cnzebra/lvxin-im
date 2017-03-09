@@ -25,27 +25,25 @@ public class LXAccountController  {
 	{
 	    if(event.eventType.equals(PubMenuEvent.EVENT_TYPE_SUBSCRIBE))
 	    {
-	    	doOnSubscribeEvent(event);
+	    	return doOnSubscribeEvent(event);
 	    }
 	    
 	    if(event.eventType.equals(PubMenuEvent.EVENT_TYPE_UNSUBSCRIBE))
 	    {
-	    	doOnUnSubscribeEvent(event);
+	    	return doOnUnSubscribeEvent(event);
 	    }
 	    
 	    if(event.eventType.equals(PubMenuEvent.EVENT_TYPE_TEXT))
 	    {
-	    	String  responseJson  = doOnRecivedTextEvent(event);
-	    	return responseJson;
+	    	return doOnRecivedTextEvent(event);
 	    }
 	    
 	    if(event.eventType.equals(PubMenuEvent.EVENT_TYPE_MENU))
 	    {
-	        String responseJson = doOnMenuEvent(event);
-	    	return responseJson;
+	    	return doOnMenuEvent(event);
 	    }
 	    
-	    return null;
+	    return "{\"code\":403,\"message\":\"未知的事件:"+event.eventType+"\"}";
 	}
 	
 	
@@ -107,12 +105,13 @@ public class LXAccountController  {
 		 return null;
 	}
 	
-	private void doOnSubscribeEvent(PubMenuEvent event) {
-		// TODO Auto-generated method stub
+	private String doOnSubscribeEvent(PubMenuEvent event) {
+		// TODO 处理取消订阅的逻辑
 		
+		return "{\"code\":200}";
 	}
-	private void doOnUnSubscribeEvent(PubMenuEvent event) {
-		// TODO Auto-generated method stub
-		
+	private String doOnUnSubscribeEvent(PubMenuEvent event) {
+		// TODO 处理订阅的逻辑
+		return "{\"code\":200}";
 	}
 }
