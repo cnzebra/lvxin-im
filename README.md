@@ -2,7 +2,7 @@
 ![image](http://staticres.oss-cn-hangzhou.aliyuncs.com/lvxin-pro/lvxin_console.png)
 
 ## 说明：
-此版本目前只提供了Android客户端的安装包以及服务端的安装包 war 文件，使用者需要自己准备服务器环境以及数据库，然后部署war包到web容器，然后android客户端进行相关配置即可正常使用。
+此版本目前只提供了Android客户端的安装包以及服务端的安装包 jar 文件，使用者需要自己准备服务器环境以及Mysql数据库,redis，，然后android客户端进行相关配置即可正常使用。
 
 
 ## 前言：
@@ -11,18 +11,11 @@
 
 ### 服务端功能演示地址如下：
 ### http://lvxin.farsunset.com
-服务端具有用户管理，广播发送，组织部门管理等一些基本功能。
+
 
 ### 客户端功能介绍：
-目前只有Android版本的客户端，主要具有单人聊天，群组聊天，联系人管理，组织结构，朋友圈，摇一摇 以及漂流瓶等经典功能。
-
-### 客户端APK下载：
-### https://staticres.oss-cn-hangzhou.aliyuncs.com/lvxin-pro.apk
-
-### 可用的帐号 
-10001 到 10031  密码统一都是000000
+目前只有Android版本的客户端，主要具有单人聊天，群组聊天，联系人管理，组织结构，朋友圈等经典功能。
  
-
 #### 客户端界面
  
 ![image](http://staticres.oss-cn-hangzhou.aliyuncs.com/lvxin-pro/lvxin_login.png)
