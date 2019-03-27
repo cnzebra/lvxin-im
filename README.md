@@ -1,7 +1,5 @@
   
-## 功能演示传送门：
-## http://lvxin.farsunset.com
-
+## 功能演示传送门：http://lvxin.farsunset.com
 
 ## 前言：
 此版本目前只提供了Android客户端的安装包以及服务端的安装包文件，供您按照使用，使用者需要自己准备服务器环境，安装参见《服务端安装文档.doc》。
